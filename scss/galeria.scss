@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+.personas{
+    .titulo-galeria{
+        width: 493px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+    }
+    h1{
+        font-size: 70px;
+        font-family:'El Messiri', sans-serif;
+        margin: auto;
+        margin-top: 10px;
+        background: linear-gradient(to right,rgb(251, 255, 0), rgb(0, 195, 255),rgb(0, 255, 0));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-align: center;
+    }
+    .contenedor_galeria{
+    width: 100%;
+    margin:auto;
+    display: grid;
+    }
+    img{
+        width:100%;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    .messi__columna{
+        margin: 5px;
+    }
+    
+}
+@media (min-width: 500px){
+    .personas .contenedor_galeria{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+
+@media (min-width: 728px){
+    .personas .contenedor_galeria{
+    grid-template-columns: repeat(3,33.3%);
+    }
+}
+@media (min-width: 1024px){
+    .personas .contenedor_galeria{
+        grid-template-columns: repeat(4,25%);
+    }
+    .contenedor_galeria{
+        width: 1024px;
+    }
+}
+@media (min-width: 1200px){
+    .contenedor_galeria{
+        width: 1200px;
+    }
+}

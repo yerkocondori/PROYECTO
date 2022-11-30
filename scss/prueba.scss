@@ -1,0 +1,329 @@
+@import "galeria.scss";
+@import "contacto.scss";
+@import "eliminatorias.scss";
+@import "historia.scss";
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+nav{
+    background-color: rgb(67, 169, 227);
+    height: 90px;
+    width: 100%;
+    border-bottom: 3px solid blue;
+    box-shadow: 7px 13px 37px black;
+    .nav--ul{
+        float: right;
+        margin-right: 20px;
+    }
+    .nav--li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        list-style: none;
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+        padding: 7px 13px;
+        font-size: 18px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: -1px;
+    }
+    i{
+        margin-right: 5px;
+    }
+    .enlace{
+        position: absolute;
+        padding: 20px 50px;
+    }
+    .logo{
+        height: 60px;
+        width: 90px;
+    }
+    .nav--li :hover{
+        color: white;
+    }
+    li a.active,  li a:hover{
+        background: rgb(46, 46, 223);
+        transition: .5s;
+        border: 3px solid black;
+    }
+    .checkbtn{
+        font-size: 30px;
+        float: right;
+        line-height: 100px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+}
+.section-index{
+    center{
+        font-size: 40px;
+        font-family:'El Messiri', sans-serif;
+        margin-top: 40px;
+        margin-bottom: 40px;   
+    }
+    .conteiner-index{
+        display: block;
+        width: 700px;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-index{
+        font-size: 18px ;
+        padding: auto;
+        margin-bottom: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .boton-index{
+        width: auto;
+        background: #1f53c5;
+        padding: 12px;
+        margin: auto;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .boton-index:hover{
+        background-color:  #527fe0;
+    }
+    video{
+        margin-top: 30px;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 52px;
+    background-color: rgb(0, 0, 0); 
+    margin-top: auto;
+    box-shadow: 7px 13px 37px black;
+    .redes-footer{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 45px;
+    }
+    .logo-messi2{
+        img{
+            width: 70px;
+            height: 40px;
+        }
+    }
+    .linea{
+        width: 1px;
+        height: 30px;
+        background-color: white;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+    .enlace_1{
+        i{
+            color:red;
+            flex-wrap: wrap;
+        }
+    }
+    .enlace_2{
+        i{
+            color: blue;
+            flex-wrap: wrap;
+        }
+    }
+    .enlace_3{
+        i{
+            color: rgb(21, 67, 128);
+            flex-wrap: wrap;
+        }
+    }  
+    .enlace_4{
+        i{
+            color: white;
+            flex-wrap: wrap;
+        }
+    }
+    .enlace_5{
+        i{
+            color: red;
+            flex-wrap: wrap;
+        }
+    }
+    .enlace_1 :hover{
+        border-bottom:5px solid white;
+    }
+    .enlace_2 :hover{
+        border-bottom:5px solid white;
+    }
+    .enlace_3 :hover{
+        border-bottom:5px solid white;
+    }
+    .enlace_4 :hover{
+        border-bottom:5px solid white;
+    }
+    .enlace_5 :hover{
+        border-bottom:5px solid white;
+    }
+}
+@media screen and (max-width: 1400px){
+    .section-index .conteiner-index video{
+        margin-bottom: 20px;
+    }
+    .form-register{
+        margin-left: 300px;
+        margin-top: 30px;
+    }
+    .form-textarea{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .form-register{
+        margin-left: 250px;
+        margin-top: 30px;
+    }
+    .form-textarea{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .form-register{
+        margin-left: 170px;
+        margin-top: 30px;
+    }
+    .form-textarea{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    nav .nav--li{
+        margin: 0 0px;
+    }
+    .form-register{
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    .form-textarea{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 900px){
+    nav a{
+        font-size: 14px;
+    }
+    .form-register{
+        margin-left: 250px;
+        margin-top: 30px;
+    }
+    .form-textarea{
+        margin-left: 250px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .section-index .conteiner-index{
+        width:500px ;
+        height: auto;
+    }
+    .section-index .conteiner-index video{
+        width: 400px;
+        height: auto;
+    body{
+        max-width: 100%;
+    }
+    }
+    label.checkbtn{
+        display: block;
+        
+    }
+    .nav--ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 50;
+    }
+    nav .nav--ul .nav--li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav .nav--ul .nav--li a{
+        font-size: 25px;
+    }
+    .nav--li a:hover, .nav--li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .form-register{
+        margin-left: 120px;
+    }
+    .form-textarea{
+        margin-left: 120px;
+    }
+}
+@media screen and (max-width: 500px){
+    .section-index .conteiner-index{
+        width:400px ;
+        height: auto;
+    }
+    .personas .titulo-galeria{
+        width: 353px;
+    }
+    .personas .titulo-galeria h1{
+        font-size: 50px;
+    }
+    .tabla-posiciones th{
+        font-size: 12px;
+    }
+    .tabla-posiciones2 th {
+        font-size: 12px;
+    }
+    .form-register{
+        margin-left: 50px;
+    }
+    .form-textarea{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 450px){
+    .section-index .conteiner-index{
+        width:320px ;
+        height: auto;
+    }
+    .section-index .conteiner-index video{
+        width: 300px;
+        height: auto;
+    }
+    .form-register{
+        margin-left: 30px;
+    }
+    .form-textarea{
+        margin-left: 30px;
+    }
+}
